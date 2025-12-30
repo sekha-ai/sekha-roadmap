@@ -1,6 +1,15 @@
 ## Roadmap
 
+
+### Implementation additions
+
+- [ ] **Implement Homebrew deployment method
+brew tap sekha-ai/core
+brew install sekha-controller
+
+
 ### Code enhancements:
+
 
 ### Infrastructure Improvements
 
