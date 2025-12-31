@@ -1,5 +1,12 @@
 ## Roadmap
 
+VERSION ROADMAP:
+- v0.1 (3mo): MVP - CRUD, MCP, Python SDK, Docker
+- v0.2 (2mo): Summaries, scoring, VS Code plugin
+- v0.3 (2mo): Postgres, K8s, audit logs, commercial licensing
+- v1.0 (3mo): Federation, team features, SOC2
+- v2.0 (future): Plugins, mobile, cloud-native embeddings
+
 
 ### Implementation additions:
 
