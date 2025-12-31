@@ -35,29 +35,29 @@ fallback_to_local = true  # If cloud fails, use Ollama
 
 - [ ] **Future Tool: memory_analyze**
 
-**Description:** AI-powered conversation analysis that generates insights, summaries, and identifies patterns across your memory.
+*Description:* AI-powered conversation analysis that generates insights, summaries, and identifies patterns across your memory.
 
-**Value Proposition:**
+*Value Proposition:*
 - Automatically generates executive summaries of long conversations
 - Identifies recurring themes and topics across multiple conversations
 - Extracts key decisions, action items, and open questions
 - Provides sentiment analysis and interaction patterns
 - Enables "conversation analytics" for power users
 
-**Controller Requirements:**
+*Controller Requirements:*
 - New endpoint: `POST /api/v1/conversations/analyze`
 - Requires LLM Bridge integration (calls Ollama/OpenAI/Anthropic)
 - Needs orchestrator service for multi-conversation analysis
 - New repository method: `find_conversations_by_theme()`
 
-**Implementation Complexity:** High
+*Implementation Complexity:* High
 - Requires new `analyze.rs` service in controller
 - Needs embedding-based theme clustering
 - LLM prompt engineering for summaries
 - Cost management for LLM API calls
 
-**Priority:** Medium (after core tools are stable)
-**Estimated Effort:** 2-3 days (controller) + 1 day (MCP) + 1 day (tests)
+*Priority:* Medium (after core tools are stable)
+*Estimated Effort:* 2-3 days (controller) + 1 day (MCP) + 1 day (tests)
 
 
 ### Code enhancements:
