@@ -33,7 +33,7 @@ fallback_to_local = true  # If cloud fails, use Ollama
 - Bridge syncs encrypted summaries to shared S3/R2
 - Uses CRDTs for conflict resolution (label renames, etc.)
 
-- [ ] ### Future Tool: memory_analyze
+- [ ] **Future Tool: memory_analyze**
 
 **Description:** AI-powered conversation analysis that generates insights, summaries, and identifies patterns across your memory.
 
