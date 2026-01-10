@@ -59,7 +59,7 @@ fallback_to_local = true  # If cloud fails, use Ollama
 *Priority:* Medium (after core tools are stable)
 *Estimated Effort:* 2-3 days (controller) + 1 day (MCP) + 1 day (tests)
 
-- [ ] **Auto-naming: Folders/labels - Future Feature, Not Core
+- [ ] **Auto-naming: Folders/labels** - Future Feature, Not Core
 
 User creates:
   /work/project-alpha
@@ -74,6 +74,8 @@ AI suggests (optional, future):
    Suggested labels: #planning, #technical"
   
   [Accept] [Ignore] [Never suggest again]
+
+- [ ] **Pattern Recognition** - new function to analyze all conversations/messages for patterns (that can be displayed to the user) to understand things that are not immediately obvious and be more of a 30,000 ft. view of your 'memory'.
 
 
 ### Code enhancements:
