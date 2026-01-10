@@ -59,6 +59,22 @@ fallback_to_local = true  # If cloud fails, use Ollama
 *Priority:* Medium (after core tools are stable)
 *Estimated Effort:* 2-3 days (controller) + 1 day (MCP) + 1 day (tests)
 
+- [ ] **Auto-naming: Folders/labels - Future Feature, Not Core
+
+User creates:
+  /work/project-alpha
+  /personal/recipes
+  
+User adds labels:
+  #urgent, #reference, #completed
+
+AI suggests (optional, future):
+  "This looks like a project planning conversation. 
+   Suggested folder: /work/project-alpha 
+   Suggested labels: #planning, #technical"
+  
+  [Accept] [Ignore] [Never suggest again]
+
 
 ### Code enhancements:
 
