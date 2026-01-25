@@ -93,10 +93,9 @@ rust
 
 ## Considerations:
 
-2. Ok so examine and see.
+2. Requires further discussion.
 4. I will make note to implement
 6. I will make note to implement
-7. Since you, Claude (Anthropic) and OpenAI and all frontier labs, are the ultimate target for this 'app' so that ii becomes ubiquitous and pervasive around the world, we have already included kubernetes, helm deployment methods on aws, gcr, and azure. So, when the time comes that this 'app' is noticed by frontier labs it will be 'easy' for them to test and validate and integrate. And, clearly they will all want HA, but that can easily be addressed at that time by us or them.
 8. Yes, we may allow specific import formats in the future.
 9. I will make note to implement
 10. I will consider for the future based on user input/feedback
@@ -115,9 +114,7 @@ rust
 25. I will make note to implement in the future
 26-30. I will make note to implement in the future
     
-## **2. Maybe you're missing other pieces of code...**
-
-You're right. Let me trace the Chroma connection handling more carefully:
+## **2.Chroma connection handling**
 
 From `chroma_client.rs`, the error propagation:
 ```rust
@@ -128,8 +125,6 @@ pub async fn search(&self, query_embedding: Vec<f32>) -> Result<Vec<ChromaResult
 ```
 
 Then in the repository layer, there might be fallback logic I missed. Let me check if the controller has a hybrid search strategy where FTS5 kicks in when Chroma fails. I should examine the `semantic_search` implementation in the repository trait to see if it has fallback behavior.
-
-**Retraction**: Without seeing the complete repository implementation, I may have jumped to conclusions about missing resilience.
 
 ***
 
